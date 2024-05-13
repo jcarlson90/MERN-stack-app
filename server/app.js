@@ -11,7 +11,6 @@ app.use(bodyParser.urlencoded({ limit: "32mb", extended: true}));
 app.use(cors());
 app.use("/stories", storyRoutes);
 
-const MONGO_URI= "mongodb+srv://Jake:5b0aNo2COtHDUXsz@cluster0.inwkazg.mongodb.net/api-project?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5001;
 
 const connectDB = async () => {
